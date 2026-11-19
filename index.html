@@ -120,7 +120,7 @@ html:not(.dt) .win{left:max(12px,calc(50vw - 410px))!important;top:calc(72px + e
 .znav nav{display:flex;gap:clamp(14px,2.4vw,34px);margin-left:auto;min-width:0;overflow-x:auto;scrollbar-width:none;font-size:13px;font-weight:600;letter-spacing:.05em}.znav nav::-webkit-scrollbar{display:none}
 .znav nav a{color:var(--m);white-space:nowrap;transition:color .2s}.znav nav a:hover{color:var(--i)}
 .zdk{flex:none;padding:6px 14px;border:1px solid var(--l);border-radius:99px;font-size:12px;font-weight:700;color:var(--m);transition:.2s}.zdk:hover{color:var(--i);border-color:var(--a)}
-.zhero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);grid-template-areas:"n p" "t p";grid-template-rows:auto 1fr;column-gap:clamp(20px,4vw,64px);padding:clamp(96px,15vh,150px) 0 clamp(56px,9vw,110px)}
+.zhero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);grid-template-areas:"n p" "t p";grid-template-rows:auto 1fr;column-gap:clamp(20px,4vw,64px);padding-top:clamp(96px,15vh,150px);padding-bottom:clamp(56px,9vw,110px)}
 .zn{grid-area:n;position:relative;z-index:2}.zp{grid-area:p}.zt{grid-area:t;align-self:end;padding-top:clamp(24px,4vw,48px)}
 .zeye{font:700 12px/1.5 var(--font);letter-spacing:.2em;text-transform:uppercase;color:var(--a);margin-bottom:clamp(14px,2vw,26px)}
 .zname{font:800 clamp(44px,7.4vw,112px)/.95 var(--font);letter-spacing:-.04em}
@@ -176,7 +176,13 @@ html:not(.dt) .win{left:max(12px,calc(50vw - 410px))!important;top:calc(72px + e
 .zcase,.zcase:nth-child(even){grid-template-columns:minmax(0,1fr)}.zcase:nth-child(even) .zcv{order:0}
 .zxr{grid-template-columns:minmax(0,1fr)}.zdk{padding:6px 11px}.zmet{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
 @media(max-width:700px){#clk{display:none}
-.zlogo,.zdk{display:none}.znav{padding-left:16px;padding-right:16px}.znav nav{margin:0;width:100%;justify-content:space-between;gap:12px;font-size:12.5px;letter-spacing:.02em}
+.zwrap{padding-left:26px;padding-right:26px}.znav{padding-left:26px;padding-right:26px}.zhero{padding-top:92px;padding-bottom:48px}.zeye{font-size:10.5px;letter-spacing:.14em}.zcv{padding:24px;min-height:240px}.zsec{padding:52px 0}.zsh{margin-bottom:28px;flex-direction:column;align-items:flex-start;gap:10px}.zmet{gap:10px}.zmet span{max-width:none;font-size:12px}
+.zname{font-size:13.4vw}.zeye{text-wrap:balance}
+.zres{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.zres span{max-width:none}
+.zmore{flex-direction:column;align-items:flex-start;gap:14px}.zmore .zlink{display:inline-block}
+.zsk{gap:28px}.zsk ul{line-height:1.7}.zsk li{display:inline;padding:0;border:0;font-size:14.5px}.zsk li:not(:last-child):after{content:" · ";color:var(--a)}
+.zxr{padding:24px 0}.zft{flex-direction:column}.zedu{flex-direction:column}.zedu .zlink,.zft .zlink{align-self:flex-start}
+.zlogo,.zdk{display:none}.znav nav{margin:0;width:100%;justify-content:space-between;gap:12px;font-size:12.5px;letter-spacing:.02em}
 html:not(.dt) .win{left:0!important;top:calc(52px + env(safe-area-inset-top,0px))!important;width:100vw!important;max-width:none;height:calc(100vh - 52px - env(safe-area-inset-top,0px))!important;height:calc(100dvh - 52px - env(safe-area-inset-top,0px))!important;border-radius:16px 16px 0 0}}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="21"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffeaf2"/></linearGradient></defs></svg>
