@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8">
+<html lang="ru" data-theme="light"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Вероника Данковцева — маркетинг-портфолио</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff7fa;--ink:#2a1a2a;--mut:#7d5f75;--glass:rgba(255,250,252,.86);--card:rgba(255,255,255,.82);--soft:rgba(255,228,238,.72);--line:rgba(120,40,80,.14);--acc:#d02a6a;--pink:#ff8fb8;--lil:#e1d7ff;--but:#ffe3ec;--mnt:#ffc4d8;--pch:#ffe6cf;--sky:#cfeaff;--dk:#2a1a20;--dock:rgba(255,255,255,.3);--font:Manrope,system-ui,sans-serif;--ser:"Cormorant Garamond",Georgia,serif;--mono:ui-monospace,Menlo,Consolas,monospace;--wp:radial-gradient(60% 55% at 12% 8%,#f2709f 0%,transparent 62%),radial-gradient(55% 50% at 92% 10%,#f79a7c 0%,transparent 62%),radial-gradient(65% 60% at 90% 95%,#8a68ee 0%,transparent 64%),radial-gradient(55% 55% at 8% 95%,#e5508d 0%,transparent 62%),#d4548a}
+:root{--bg:#fff7fa;--ink:#2a1a2a;--mut:#7d5f75;--glass:rgba(255,250,252,.86);--card:rgba(255,255,255,.82);--soft:rgba(255,228,238,.72);--line:rgba(120,40,80,.14);--acc:#d02a6a;--pink:#ff8fb8;--lil:#e1d7ff;--but:#ffe3ec;--mnt:#ffc4d8;--pch:#ffe6cf;--sky:#cfeaff;--dk:#2a1a20;--dock:rgba(255,255,255,.3);--font:Manrope,system-ui,sans-serif;--ser:Manrope,system-ui,sans-serif;--mono:ui-monospace,Menlo,Consolas,monospace;--wp:radial-gradient(60% 55% at 12% 8%,#f2709f 0%,transparent 62%),radial-gradient(55% 50% at 92% 10%,#f79a7c 0%,transparent 62%),radial-gradient(65% 60% at 90% 95%,#8a68ee 0%,transparent 64%),radial-gradient(55% 55% at 8% 95%,#e5508d 0%,transparent 62%),#d4548a}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1e1322;--ink:#fff0f6;--mut:#d0b0c6;--glass:rgba(38,24,42,.84);--card:rgba(255,255,255,.07);--soft:rgba(255,255,255,.08);--line:rgba(255,220,238,.14);--acc:#ff8fb8;--dock:rgba(46,28,50,.55);--wp:radial-gradient(60% 55% at 12% 8%,#7a2354 0%,transparent 62%),radial-gradient(60% 55% at 92% 92%,#2e2a80 0%,transparent 64%),#1d1220}}
 :root[data-theme=dark]{--bg:#1e1322;--ink:#fff0f6;--mut:#d0b0c6;--glass:rgba(38,24,42,.84);--card:rgba(255,255,255,.07);--soft:rgba(255,255,255,.08);--line:rgba(255,220,238,.14);--acc:#ff8fb8;--dock:rgba(46,28,50,.55);--wp:radial-gradient(60% 55% at 12% 8%,#7a2354 0%,transparent 62%),radial-gradient(60% 55% at 92% 92%,#2e2a80 0%,transparent 64%),#1d1220}
-*{box-sizing:border-box}html,body{height:100%;margin:0;overflow:hidden}
+*{box-sizing:border-box}html,body{margin:0}html.dt,html.dt body{height:100%;overflow:hidden}
 body{font:14px/1.5 var(--font);color:var(--ink);background:var(--wp)}
 button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 h1,h2,h3{font-weight:800;margin:0 0 .4em;line-height:1.15}h2{font-size:26px}h3{font-size:17px;margin-top:14px}small{color:var(--mut)}a{color:var(--acc)}
@@ -105,10 +105,83 @@ h2{font:600 32px/1.1 var(--ser)}
 #dock button:nth-child(n+6),#dock .sep{display:none}#dock button:hover{transform:none}#dock button:hover:after{display:none}
 .win{left:0!important;top:calc(34px + env(safe-area-inset-top,0px))!important;width:100%!important;height:calc(100% - 34px - env(safe-area-inset-top,0px) - 86px - env(safe-area-inset-bottom,0px))!important;border-radius:20px 20px 0 0;resize:none;min-width:0}
 .win>header .m{display:none}.win>header i{width:17px;height:17px}.body{padding:16px}.split{flex-direction:column;margin:-16px}.side{width:auto;flex-direction:row;overflow-x:auto;padding:8px}.side small{display:none}.side button{white-space:nowrap}.main{padding:16px}.term{margin:-16px;padding:14px}.btn{padding:13px 22px}h2{font-size:22px}}
+/* ===== editorial site layer ===== */
+html:not(.dt) :is(#bar,#ico,#wid,#wid2,#wdots,#dock){display:none!important}
+html.dt #site{display:none}
+html:not(.dt) body{background:#fbf8fa}
+html{scroll-behavior:smooth}html.dt{scroll-behavior:auto}
+html:not(.dt) .win{left:max(12px,calc(50vw - 410px))!important;top:calc(72px + env(safe-area-inset-top,0px))!important;width:min(820px,calc(100vw - 24px))!important;height:min(640px,calc(100vh - 96px))!important;max-width:calc(100vw - 24px)}
+#site{--i:#1f1522;--m:#6e5b69;--l:rgba(60,30,50,.14);--a:#c42a68;--v:#6d4aff;position:relative;overflow-x:clip;color:var(--i);font:400 16px/1.6 var(--font);background:radial-gradient(60% 40% at 0% 0%,#ffe6ef 0%,transparent 70%),#fbf8fa}
+#site a{color:inherit;text-decoration:none}:is(h1,h2,h3,p,ul,dl,dd,figure):where(#site *){margin:0;padding:0}#site ul{list-style:none}
+#site section{scroll-margin-top:64px}
+.zwrap{max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+.znav{position:fixed;top:0;left:0;right:0;z-index:150;display:flex;align-items:center;gap:18px;padding:calc(12px + env(safe-area-inset-top,0px)) clamp(16px,4vw,56px) 12px;background:rgba(251,248,250,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--l)}
+.zlogo{font:800 20px var(--font);letter-spacing:.04em}
+.znav nav{display:flex;gap:clamp(14px,2.4vw,34px);margin-left:auto;min-width:0;overflow-x:auto;scrollbar-width:none;font-size:13px;font-weight:600;letter-spacing:.05em}.znav nav::-webkit-scrollbar{display:none}
+.znav nav a{color:var(--m);white-space:nowrap;transition:color .2s}.znav nav a:hover{color:var(--i)}
+.zdk{flex:none;padding:6px 14px;border:1px solid var(--l);border-radius:99px;font-size:12px;font-weight:700;color:var(--m);transition:.2s}.zdk:hover{color:var(--i);border-color:var(--a)}
+.zhero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);grid-template-areas:"n p" "t p";grid-template-rows:auto 1fr;column-gap:clamp(20px,4vw,64px);padding:clamp(96px,15vh,150px) 0 clamp(56px,9vw,110px)}
+.zn{grid-area:n;position:relative;z-index:2}.zp{grid-area:p}.zt{grid-area:t;align-self:end;padding-top:clamp(24px,4vw,48px)}
+.zeye{font:700 12px/1.5 var(--font);letter-spacing:.2em;text-transform:uppercase;color:var(--a);margin-bottom:clamp(14px,2vw,26px)}
+.zname{font:800 clamp(44px,7.4vw,112px)/.95 var(--font);letter-spacing:-.04em}
+.zname span{display:block}.zname span+span{color:var(--a)}
+.zlede{max-width:56ch;font-size:clamp(16px,1.5vw,19px);color:#4a3a48}
+.zlede b{color:var(--i)}
+.zmet{display:flex;flex-wrap:wrap;gap:12px clamp(24px,4vw,56px);margin:clamp(22px,3vw,36px) 0}
+.zmet b{display:block;font:800 clamp(30px,3.8vw,48px)/1 var(--font);letter-spacing:-.03em;color:var(--a)}.zmet span{display:block;max-width:15ch;margin-top:6px;font-size:12.5px;line-height:1.35;color:var(--m)}
+.zcta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px}
+.zbtn{display:inline-block;padding:14px 26px;border-radius:99px;background:var(--a);color:#fff!important;font-weight:800;font-size:14px;transition:.2s}.zbtn:hover{transform:translateY(-2px);background:#a81f58}
+.zlink{font-weight:700;font-size:14px;border-bottom:1px solid var(--a);padding-bottom:2px;color:var(--i);cursor:pointer}.zlink:hover{color:var(--a)}
+.zph{position:relative;height:100%;min-height:clamp(380px,48vw,640px);border-radius:999px 999px 6px 6px;overflow:hidden;box-shadow:0 24px 60px #5a203a30}
+.zph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%;filter:saturate(.92) contrast(1.04)}
+.zph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,#2a1020d9)}
+.zbd{color:#fff;position:absolute;z-index:1;left:16px;right:16px;bottom:16px;font-size:12.5px;line-height:1.4}.zbd b{display:block;font:800 17px/1.25 var(--font);margin-bottom:6px}.zbd span{display:block;color:#f6e4ec}
+.zsec{padding:clamp(56px,9vw,130px) 0;border-top:1px solid var(--l)}
+.zsh{display:flex;align-items:baseline;gap:18px;margin-bottom:clamp(28px,5vw,64px)}.zsh i{font:700 12px var(--font);letter-spacing:.2em;color:var(--a);font-style:normal}
+#site h2{font:800 clamp(30px,5vw,64px)/1.05 var(--font);letter-spacing:-.035em}
+.zbig{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,48px)}.zbig>:nth-child(2){margin-top:clamp(0px,5vw,72px)}.zbig>:nth-child(3){margin-top:clamp(0px,10vw,140px)}
+.znm b{display:block;font:800 clamp(44px,6vw,92px)/.95 var(--font);letter-spacing:-.04em;color:var(--a);white-space:nowrap}
+.znm>span{display:block;max-width:24ch;margin-top:10px;color:var(--m);font-size:14px;line-height:1.4}
+.zsmall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,3vw,40px);margin-top:clamp(40px,7vw,100px);padding-top:28px;border-top:1px solid var(--l)}
+.zsmall .znm b{font-size:clamp(34px,4.4vw,64px);background:none;color:var(--i)}
+.znote{margin-top:24px;font-size:12.5px;color:var(--m);max-width:70ch}
+.zcase{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,64px);align-items:center;margin-bottom:clamp(56px,9vw,130px)}
+.zcase:nth-child(even){grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}.zcase:nth-child(even) .zcv{order:2}
+.zcv{position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;min-height:clamp(280px,42vw,560px);padding:clamp(20px,3vw,44px);border-radius:6px;background:var(--g);box-shadow:0 18px 50px #5a203a22;cursor:pointer;transition:transform .4s}.zcv:hover{transform:scale(1.012)}
+.zcv:before{display:none;content:attr(data-n);position:absolute;top:-.12em;right:.06em;font:600 clamp(120px,22vw,320px)/1 var(--ser);color:transparent;-webkit-text-stroke:1px #ffffff2e}
+.zcv b{position:relative;font:800 clamp(56px,9vw,150px)/.9 var(--font);letter-spacing:-.04em;color:var(--i)}.zcv b.s{font-size:clamp(40px,6vw,96px)}.zcv span{position:relative;max-width:26ch;margin-top:12px;font-size:14px;color:#4a3a48}
+.ztag{font:700 11px var(--font);letter-spacing:.16em;text-transform:uppercase;color:var(--a);margin-bottom:12px}
+.zci h3{font:800 clamp(28px,3.6vw,48px)/1.05 var(--font);letter-spacing:-.03em;margin-bottom:14px}
+.zrole{font-size:14px;font-weight:700;color:var(--i);margin-bottom:10px}.zci p{color:#4a3a48}
+.zres{display:flex;flex-wrap:wrap;gap:18px 32px;margin:24px 0 8px;padding:20px 0;border-top:1px solid var(--l);border-bottom:1px solid var(--l)}
+.zres div{min-width:0}.zres b{display:block;font:800 clamp(24px,2.6vw,34px)/1 var(--font);letter-spacing:-.03em;color:var(--a)}.zres span{display:block;max-width:17ch;margin-top:4px;font-size:12px;line-height:1.3;color:var(--m)}
+.zci small{display:block;margin:10px 0 18px;color:var(--m);font-size:12px}
+.zmore{display:flex;flex-wrap:wrap;gap:10px 28px;padding-top:8px;color:var(--m);font-size:14px}.zmore .zlink{font-size:14px}
+.zxr{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr) minmax(0,1fr);gap:clamp(12px,3vw,44px);padding:30px 0;border-top:1px solid var(--l)}
+.zxr time{font:600 13px/1.5 var(--font);color:var(--a)}.zxr time small{display:block;color:var(--m);font-weight:500}
+.zxr h3{font:800 clamp(20px,2.2vw,28px)/1.15 var(--font);letter-spacing:-.02em}.zxr h3 small{display:block;margin-top:8px;font:700 14px/1.4 var(--font);color:var(--m)}
+.zxr li{position:relative;padding-left:16px;margin-bottom:7px;font-size:14.5px;color:#4a3a48}.zxr li:before{content:"";position:absolute;left:0;top:.72em;width:7px;height:1px;background:var(--a)}
+.zxr .r{margin-top:10px;font-weight:700;font-size:14px;color:var(--a)}
+.zedu{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;padding-top:28px;border-top:1px solid var(--l);color:var(--m);font-size:14px}.zedu b{color:var(--i)}
+.zsk{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(24px,3vw,44px)}
+.zsk h3{padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--a);font:800 18px/1.25 var(--font)}.zsk h3 i{display:block;margin-bottom:8px;font:700 11px var(--font);letter-spacing:.2em;color:var(--a);font-style:normal}
+.zsk li{padding:6px 0;border-bottom:1px solid var(--l);font-size:14.5px;color:#4a3a48}
+.zct{text-align:left}.zct h2{max-width:14ch}
+.zmail{display:block;margin:clamp(24px,4vw,48px) 0 18px;font:800 clamp(22px,5vw,72px)/1.1 var(--font);letter-spacing:-.03em;overflow-wrap:anywhere;border-bottom:1px solid var(--a);padding-bottom:10px;transition:color .2s}.zmail:hover{color:var(--a)}
+.zft{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;padding:28px 0 calc(32px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--l);color:var(--m);font-size:13px}
+.zrv{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s}.zrv.in{opacity:1;transform:none}
+@media(max-width:900px){
+.zhero{grid-template-columns:minmax(0,1fr);grid-template-areas:"n" "p" "t";grid-template-rows:none}.zname{margin-right:0}.zph{min-height:0;height:auto;aspect-ratio:4/5;max-height:70vh;margin-top:clamp(18px,4vw,30px);border-radius:999px 999px 6px 6px}
+.zbig{grid-template-columns:minmax(0,1fr)}.zbig>*{margin-top:0!important}.zsmall{grid-template-columns:repeat(2,minmax(0,1fr))}
+.zcase,.zcase:nth-child(even){grid-template-columns:minmax(0,1fr)}.zcase:nth-child(even) .zcv{order:0}
+.zxr{grid-template-columns:minmax(0,1fr)}.zdk{padding:6px 11px}.zmet{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
+@media(max-width:700px){#clk{display:none}
+.zlogo,.zdk{display:none}.znav{padding-left:16px;padding-right:16px}.znav nav{margin:0;width:100%;justify-content:space-between;gap:12px;font-size:12.5px;letter-spacing:.02em}
+html:not(.dt) .win{left:0!important;top:calc(52px + env(safe-area-inset-top,0px))!important;width:100vw!important;max-width:none;height:calc(100vh - 52px - env(safe-area-inset-top,0px))!important;height:calc(100dvh - 52px - env(safe-area-inset-top,0px))!important;border-radius:16px 16px 0 0}}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="21"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffeaf2"/></linearGradient></defs></svg>
-<div id="welcome"><svg class="fl" viewBox="0 0 24 24" style="left:12%;top:18%" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" fill="#fff"/></svg><svg class="fl" viewBox="0 0 24 24" style="right:14%;top:24%;width:20px;height:20px;animation-delay:-2s" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" fill="#fff"/></svg><svg class="fl" viewBox="0 0 24 24" style="left:18%;bottom:20%;width:22px;height:22px;animation-delay:-4s" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" fill="#fff"/></svg><svg class="fl" viewBox="0 0 24 24" style="right:20%;bottom:16%;animation-delay:-1s" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z" fill="#fff"/></svg><div class="wc"><div class="av" id="wav"></div><h1>Вероника Данковцева</h1><p class="sub">Интернет-маркетолог · EdTech</p><button class="enter" id="enter">Войти в рабочее пространство</button><p class="hint">Персональное портфолио · 2026</p></div></div>
-<div id="bar"><b class="lg"><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z" fill="currentColor" stroke="none"/></svg>Портфолио Вероники</b><span class="menu"><button data-open="overview">Начать здесь</button><button id="mwin">Свернуть всё</button><button data-open="terminal">Справка</button></span><span class="sp"></span><button id="calm" title="Анимации вкл/выкл" aria-label="Анимации"><svg class="bi" viewBox="0 0 24 24"><path d="M12 4l1.8 4.7L18.5 10.5l-4.7 1.8L12 17l-1.8-4.7L5.5 10.5l4.7-1.8z"/></svg></button><button id="theme" title="Светлая/тёмная тема" aria-label="Тема"><svg class="bi" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a13 13 0 0 1 18 0M6 13a8.5 8.5 0 0 1 12 0M9.2 16.3a4 4 0 0 1 5.6 0"/></svg><span class="bat"></span><button id="srch" title="Поиск (Ctrl/⌘ + K)" aria-label="Поиск"><svg class="bi" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button><span id="clk"></span></div>
+<div id="site"></div>
+<div id="bar"><b class="lg"><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z" fill="currentColor" stroke="none"/></svg>Портфолио Вероники</b><span class="menu"><button data-open="overview">Начать здесь</button><button id="mwin">Свернуть всё</button><button data-open="terminal">Справка</button></span><span class="sp"></span><button id="tosite" title="Вернуться на главную страницу">← На сайт</button><button id="calm" title="Анимации вкл/выкл" aria-label="Анимации"><svg class="bi" viewBox="0 0 24 24"><path d="M12 4l1.8 4.7L18.5 10.5l-4.7 1.8L12 17l-1.8-4.7L5.5 10.5l4.7-1.8z"/></svg></button><button id="theme" title="Светлая/тёмная тема" aria-label="Тема"><svg class="bi" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button><svg class="bi" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5a13 13 0 0 1 18 0M6 13a8.5 8.5 0 0 1 12 0M9.2 16.3a4 4 0 0 1 5.6 0"/></svg><span class="bat"></span><button id="srch" title="Поиск (Ctrl/⌘ + K)" aria-label="Поиск"><svg class="bi" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button><span id="clk"></span></div>
 <div id="ico"></div><div id="wid"></div><div id="wid2"></div><div id="wdots"></div><div id="dock"></div>
 <div id="spot"><div><input id="si" placeholder="Поиск по разделам портфолио" autocomplete="off"><div id="sr"></div></div></div>
 <script>
@@ -192,7 +265,7 @@ tools(w){w.addEventListener('click',e=>{const b=e.target.closest('[data-t]');if(
 terminal(w){const o=w.querySelector('#to'),i=w.querySelector('#ti');let skip=0;const put=(t,u)=>{const p=document.createElement('pre');o.appendChild(p);if(u||document.documentElement.classList.contains('calm')){p.textContent=t;return}let n=0;skip=0;const id=setInterval(()=>{n+=3;p.textContent=t.slice(0,n);w.querySelector('.body').scrollTop=1e9;if(n>=t.length||skip){clearInterval(id);p.textContent=t}},10)};
 put('Добро пожаловать в терминал Вероники.\nВведите "help", чтобы увидеть список команд.');
 w.addEventListener('pointerdown',()=>{skip=1;setTimeout(()=>i.focus(),0)});i.addEventListener('keydown',e=>{skip=1;if(e.key!='Enter')return;const c=i.value.trim().toLowerCase();i.value='';put('$ '+c,1);if(c=='clear')o.innerHTML='';else if(c)put(T[c]||'команда не найдена: '+c+'. Введите "help", чтобы увидеть список команд.')})}};
-let Z=10;const W={};
+let Z=200;const W={};
 function dock(){document.querySelectorAll('#dock button').forEach(b=>b.classList.toggle('on',!!W[b.dataset.id]))}
 function raise(w){w.style.zIndex=++Z}
 function openApp(id){let w=W[id];if(w){w.style.display='flex';raise(w);dock();return}
@@ -221,19 +294,70 @@ return `<div class="wg w2 gr" data-open="analytics" role="button" tabindex="0" a
 +`<div class="wg w2 xs" data-open="analytics" role="button" tabindex="0" aria-label="Продажи годового курса"><div class="l"><b>×4,5</b><small>продажи флагманского годового курса за год</small></div><div class="r"><div><span>было</span><i style="--w:22%"></i></div><div><span>стало</span><i style="--w:100%"></i></div></div></div>`
 +`<div class="wg sqr st bd"><div><b>≈500 тыс. ₽</b><small>рекламный бюджет в месяц</small></div><div><b>≈120 ₽</b><small>средний CPL</small></div></div>`
 +`<div class="wg sqr st vk"><div><b>18,2 млн</b><small>просмотров ВК за 2 года</small></div><div><b>2,05 млн</b><small>охват ВК за 2 года</small></div></div>`}
-$('#wid').innerHTML=widgA();$('#wid2').innerHTML=widgB();$('#wav').innerHTML=AV;
+$('#wid').innerHTML=widgA();$('#wid2').innerHTML=widgB();
 const bump=()=>{const w=$('#wid2');w.classList.remove('go');void w.offsetWidth;setTimeout(()=>w.classList.add('go'),80)};
 $('#wdots').innerHTML='<button data-pg="0" class="on" aria-label="Виджеты, страница 1"></button><button data-pg="1" aria-label="Виджеты, страница 2"></button>';
 $('#wdots').addEventListener('click',e=>{const b=e.target.closest('[data-pg]');if(!b)return;document.body.classList.toggle('pg2',b.dataset.pg=='1');document.querySelectorAll('#wdots button').forEach(x=>x.classList.toggle('on',x==b));bump()});
 addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.classList&&e.target.classList.contains('wg'))e.target.click()});
 $('#dock').innerHTML=['overview','finder','projects','automations','analytics','skills','tools','team','terminal','|','contact'].map(id=>id=='|'?'<i class="sep"></i>':`<button data-open="${id}" data-id="${id}" data-n="${A[id][0]}" aria-label="${A[id][0]}">${sq(id)}</button>`).join('');
 document.addEventListener('click',e=>{const t=e.target.closest('[data-open]');if(t){$('#spot').classList.remove('on');openApp(t.dataset.open)}});
-$('#enter').onclick=()=>{$('#welcome').classList.add('out');setTimeout(()=>$('#welcome').remove(),700);openApp('overview');bump()};
-const tick=()=>{const w=$('#wclk');w&&(w.textContent=new Date().toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}));$('#clk').textContent=new Date().toLocaleString('ru-RU',{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})};tick();setInterval(tick,5000);$('#enter').focus();
+
+const tick=()=>{const w=$('#wclk');w&&(w.textContent=new Date().toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}));$('#clk').textContent=new Date().toLocaleString('ru-RU',{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})};tick();setInterval(tick,5000);
 $('#theme').onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme=='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=d?'light':'dark'};
 $('#calm').onclick=()=>document.documentElement.classList.toggle('calm');
 $('#mwin').onclick=()=>{Object.values(W).forEach(w=>w.style.display='none')};
 const sp=$('#spot'),si=$('#si'),sr=$('#sr'),res=()=>{const q=si.value.toLowerCase();sr.innerHTML=ids.filter(id=>(A[id][0]+' '+id).toLowerCase().includes(q)).map(id=>`<button data-open="${id}"><span class="mi" style="${cs(A[id][1])}">${ic(A[id][1])}</span>${A[id][0]}</button>`).join('')};
 const spot=()=>{sp.classList.add('on');si.value='';res();si.focus()};$('#srch').onclick=spot;si.oninput=res;si.onkeydown=e=>{if(e.key=='Enter'){const b=sr.querySelector('button');b&&b.click()}};sp.onclick=e=>{if(e.target==sp)sp.classList.remove('on')};
 addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()=='k'){e.preventDefault();spot()}if(e.key=='Escape')sp.classList.remove('on')});
+/* ===== EDITORIAL SITE ===== */
+const root=document.documentElement;
+const fv=r=>{const o=r[2]||{};return typeof r[0]=='number'?(o.p||'')+r[0].toLocaleString('ru-RU',{minimumFractionDigits:o.d||0,maximumFractionDigits:o.d||0})+(o.s||''):r[0]};
+const zn=(x,c='')=>{const o=x[2]||{};return `<div class="znm ${c}"><b>${typeof x[0]=='number'?`<span class="n" data-v="${x[0]}" data-d="${o.d||0}" data-p="${o.p||''}" data-s="${o.s||''}">${fv(x)}</span>`:x[0]}</b><span>${x[1]}</span></div>`};
+const CS=[
+{k:'Английский и Котики',tag:'Онлайн-школа подготовки к ЕГЭ · EdTech',fig:'×4,5',cap:'продажи флагманского годового курса за год',g:'linear-gradient(140deg,#ffe6ee,#ffc4d8)',role:'Руководитель маркетинга и контента (2024–2026), ранее контент-менеджер (2023)',task:'Выстроить маркетинг школы целиком: стратегия и офферы, воронки привлечения и прогрева, автоматизация во ВКонтакте и Telegram, вебинарные механики.',res:[S1,S2,S3],note:PR['Английский и Котики'][5]},
+{k:'Математика и Котики',tag:'Образовательный EdTech-проект',fig:'+123%',cap:'средний охват публикаций',g:'linear-gradient(140deg,#ece5ff,#cdbfff)',role:'Руководитель отдела маркетинга и контента (с августа 2024)',task:'Продвижение образовательных продуктов: контент-маркетинг, автоворонки, работа с базой и лидогенерация, вебинарные воронки, аналитика.',res:[S6,S7,S8,S9],note:PR['Математика и Котики'][5]},
+{k:'Китайский и Котики',tag:'Отдельный запуск образовательного продукта',fig:'Запуск',cap:'маркетинговое сопровождение',g:'linear-gradient(140deg,#ffeee0,#ffd0b0)',role:'Маркетинговое сопровождение запуска (не руководство проектом)',task:'Маркетинговая часть запуска в рамках основной работы в школах; воронки на Senler и SaleBot.',res:[['1','отдельный запуск'],['2 г. 2 мес.','в маркетинговых проектах школ']],note:PR['Китайский и Котики'][5]},
+{k:'Морозилка',tag:'Онлайн-школа',fig:'6',cap:'этапов цикла производства роликов',g:'linear-gradient(140deg,#dcf0ff,#b3dcf7)',role:'Креативный продюсер (проектная работа, сентябрь — октябрь 2026)',task:'Идеи, сценарии и ТЗ видеороликов, контент-план, организация съёмок, координация монтажа, постановки и дизайна, анализ эффективности публикаций.',res:[['2 мес.','проектная работа'],['6','этапов цикла производства'],['3','типа подрядчиков: монтаж, постановка, дизайн']],note:'Просмотры, охваты и конверсии в материалах не приводятся.'}];
+const XP=[
+['сентябрь — октябрь 2026','2 мес.','«Морозилка» · онлайн-школа','Креативный продюсер (проектная работа)',['Концепции и сценарии видеороликов для соцсетей, контент-план, планирование съёмок','Полный цикл: от идеи до монтажа и публикации, анализ статистики'],'6 этапов цикла производства; координация монтажа, постановки и дизайна'],
+['август 2024 — сентябрь 2026','2 г. 2 мес.','«Английский и Котики» и «Математика и Котики»','Руководитель отдела маркетинга и контента',['Стратегия и план продвижения курсов, автоворонки ВКонтакте (Senler) и Telegram (SaleBot)','Команда: копирайтер, контент-менеджер, TikTok-менеджер, дизайнер, подрядчики, отдел продаж'],'×4,5 продажи годового курса · Telegram 20→82% продаж · цикл сделки 81→31 день'],
+['январь 2024 — апрель 2026','2 г. 4 мес.','Самозанятость','Менеджер по рекламе',['Входящие заявки на рекламу, коммуникация с рекламодателями','Подбор каналов и площадок, креативы по ТЗ, маркировка, бартерные интеграции'],''],
+['август — декабрь 2023','5 мес.','«Английский и Котики»','Контент-менеджер / копирайтер',['Тексты и рассылки для продвижения курсов, контент-планы','Ведение Telegram-канала, информационный и вовлекающий контент'],'']];
+$('#site').innerHTML=`
+<header class="znav"><a class="zlogo" href="#about" aria-label="Наверх">VD</a><nav aria-label="Основная навигация"><a href="#about">About</a><a href="#work">Portfolio</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contacts">Contacts</a></nav><button class="zdk" id="todesk" title="Интерактивное macOS-пространство">macOS ↗</button></header>
+<main>
+<section id="about" class="zwrap zhero">
+<div class="zn zrv"><p class="zeye">Marketing / Creative Production / Content Strategy</p><h1 class="zname"><span>Veronika</span><span>Dankovtseva</span></h1></div>
+<figure class="zp zrv"><div class="zph"><img src="${PHOTO}" alt="Вероника Данковцева"><figcaption class="zbd"><b>Руководитель отдела маркетинга и контента</b><span>EdTech · Санкт-Петербург</span><span>Открыта к предложениям: полная занятость, удалённо, гибрид</span></figcaption></div></figure>
+<div class="zt zrv"><p class="zlede"><b>Интернет-маркетолог в EdTech.</b> Выстраиваю маркетинг образовательных продуктов целиком: от стратегии и привлечения аудитории до автоворонок, запуска продаж и аналитики. Руководила маркетинговой и контентной командой, работала с подрядчиками и отделом продаж.</p>
+<div class="zmet"><div><b>3+</b><span>года опыта в EdTech</span></div><div><b>4</b><span>места работы и проектов</span></div><div><b>3</b><span>образовательных проекта</span></div></div>
+<div class="zcta"><a class="zbtn" href="#work">Смотреть проекты</a><a class="zlink" href="#contacts">Написать Веронике</a></div></div>
+</section>
+<section class="zsec" id="numbers"><div class="zwrap"><div class="zsh zrv"><i>01</i><h2>Опыт в цифрах</h2></div>
+<div class="zbig zrv">${zn(S1)}${zn(['20→82%','доля продаж из Telegram'])}${zn(['81→31','дней: цикл сделки сократился на 62%'])}</div>
+<div class="zsmall zrv">${zn(VK2[0])}${zn(S5)}${zn(S7)}${zn(B2)}</div>
+<p class="znote">Цифры — результаты маркетинговых проектов школ в целом. Средний рекламный бюджет — ≈500 тыс. ₽ в месяц. ROMI, CAC и выручка не раскрываются (NDA).</p></div></section>
+<section class="zsec" id="work"><div class="zwrap"><div class="zsh zrv"><i>02</i><h2>Selected work</h2></div>
+${CS.map((c,i)=>`<article class="zcase zrv"><div class="zcv" style="--g:${c.g}" data-n="0${i+1}" data-case="${c.k}" role="button" tabindex="0" aria-label="Открыть кейс: ${c.k}"><b${c.fig.length>5?' class="s"':''}>${c.fig}</b><span>${c.cap}</span></div>
+<div class="zci"><p class="ztag">${c.tag}</p><h3>${c.k}</h3><p class="zrole">${c.role}</p><p>${c.task}</p><div class="zres">${c.res.map(r=>`<div><b>${fv(r)}</b><span>${r[1]}</span></div>`).join('')}</div><small>${c.note}</small><a class="zlink" data-case="${c.k}" role="button" tabindex="0">Изучить кейс →</a></div></article>`).join('')}
+<div class="zmore zrv"><span>Ещё в разделе Portfolio:</span><a class="zlink" data-open="automations" role="button" tabindex="0">Схемы воронок</a><a class="zlink" data-open="analytics" role="button" tabindex="0">Все цифры и графики</a><a class="zlink" data-open="tools" role="button" tabindex="0">13 инструментов</a></div></div></section>
+<section class="zsec" id="experience"><div class="zwrap"><div class="zsh zrv"><i>03</i><h2>Experience</h2></div>
+${XP.map(x=>`<div class="zxr zrv"><time>${x[0]}<small>${x[1]}</small></time><h3>${x[2]}<small>${x[3]}</small></h3><div><ul>${x[4].map(b=>`<li>${b}</li>`).join('')}</ul>${x[5]?`<p class="r">${x[5]}</p>`:''}</div></div>`).join('')}
+<div class="zedu zrv"><span><b>СПбГУ</b> · высшее образование, окончание — 2027</span><span>Английский — B2 · Русский — родной</span><a class="zlink" id="xall" role="button" tabindex="0">Полное описание опыта →</a></div></div></section>
+<section class="zsec" id="skills"><div class="zwrap"><div class="zsh zrv"><i>04</i><h2>Skills</h2></div>
+<div class="zsk zrv">${Object.entries(SK).map(([k,v],i)=>`<div><h3><i>0${i+1}</i>${k}</h3><ul>${v.map(s=>`<li>${s}</li>`).join('')}</ul></div>`).join('')}</div></div></section>
+<section class="zsec zct" id="contacts"><div class="zwrap"><div class="zsh zrv"><i>05</i><h2>Давайте работать вместе</h2></div>
+<p class="zlede zrv">Открыта к предложениям: полная занятость, удалённо или гибрид. Есть проект — напишите.</p>
+<a class="zmail zrv" href="mailto:${E}">${E}</a>
+<div class="zcta zrv"><a class="zbtn" href="mailto:${E}">Написать на почту</a><a class="zlink" href="${TG}" target="_blank" rel="noopener">Telegram @dankontseva ↗</a></div>
+<footer class="zft"><span>© Veronika Dankovtseva, 2026</span><a class="zlink" id="todesk2" role="button" tabindex="0">Открыть интерактивное macOS-пространство →</a></footer></div></section>
+</main>`;
+const openCase=k=>{openApp('projects');const b=[...W.projects.querySelectorAll('button[data-p]')].find(x=>x.dataset.p==k);b&&b.click()};
+function setMode(d){root.classList.toggle('dt',!!d);if(d){root.removeAttribute('data-theme');openApp('overview');bump()}else{root.dataset.theme='light';Object.values(W).forEach(w=>w.style.display='none');dock()}scrollTo(0,0)}
+$('#todesk').onclick=$('#todesk2').onclick=()=>setMode(1);$('#tosite').onclick=()=>setMode(0);
+$('#xall').onclick=()=>{openApp('finder');const b=W.finder.querySelector('[data-fs="exp"]');b&&b.click()};
+$('#site').addEventListener('click',e=>{const c=e.target.closest('[data-case]');c&&openCase(c.dataset.case)});
+$('#site').addEventListener('keydown',e=>{if(e.key=='Enter'||e.key==' '){const t=e.target.closest('[role=button]');if(t){e.preventDefault();t.click()}}});
+const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');cu(e.target);io.unobserve(e.target)}}),{threshold:.12}):null;
+document.querySelectorAll('#site .zrv').forEach(x=>io?io.observe(x):(x.classList.add('in'),cu(x)));
 </script></body></html>
